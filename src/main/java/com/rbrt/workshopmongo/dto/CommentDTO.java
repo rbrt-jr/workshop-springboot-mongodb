@@ -6,7 +6,7 @@ import java.util.Date;
 public class CommentDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-	private String txt;
+	private String text;
 	private Date date;
 	private AuthorDTO author;
 
@@ -16,17 +16,17 @@ public class CommentDTO implements Serializable {
 
 	public CommentDTO(String txt, Date date, AuthorDTO author) {
 		super();
-		this.txt = txt;
+		this.text = txt;
 		this.date = date;
 		this.author = author;
 	}
 
 	public String getTxt() {
-		return txt;
+		return text;
 	}
 
 	public void setTxt(String txt) {
-		this.txt = txt;
+		this.text = txt;
 	}
 
 	public Date getDate() {
